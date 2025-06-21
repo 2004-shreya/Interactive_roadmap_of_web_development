@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Development Roadmap</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <img class="img" src="image.jpg" alt="web dev">
+    <header>
+        <h1>Web Development Roadmap</h1>
+        <p>Explore the key technologies involved in web development, along with essential resources.</p>
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="feedback.php">Feedback</a>
+            
+
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <nav id="hamburger-menu">
+      <ul>
+        <li><a href="frontend.html">Frontend</a></li>
+        <li><a href="backend.html">Backend</a></li>
+        <li><a href="fullstack.html">Full Stack</a></li>
+        <li><a href="devops.html">DevOps</a></li>
+        <li><a href="database.html">Database</a></li>
+        <li><a href="testing.html">Testing</a></li>
+        <li><a href="security.html">Security</a></li>
+        <li><a href="career.html">Career Tips</a></li>
+        <li><a href="tutorials.html">Tutorials</a></li>
+        <!-- <div class="container">
+            <button id="logoutButton">Logout</button>
+        </div> -->
+      </ul>
+    </nav>
+    
+    </nav>
+    <div class="content">
+        <h1>Welcome to the Interactive Roadmap</h1>
+        <p>Select a section from the navigation bar.</p>
+    </div>
+   <main>
+    <div class="roadmap">
+        <div class="step" data-tooltip="Learn HTML and CSS Basics">HTML & CSS</div>
+        <div class="step" data-tooltip="Understand JavaScript Fundamentals">JavaScript</div>
+        <div class="step" data-tooltip="Learn Frameworks like React, Vue, or Angular">Frontend Frameworks</div>
+        <div class="step" data-tooltip="Understand Backend Languages">Backend (Node.js, PHP)</div>
+        <div class="step" data-tooltip="Learn about Databases">Databases (SQL/NoSQL)</div>
+        <div class="step" data-tooltip="Version Control Systems">Git & GitHub</div>
+        <div class="step" data-tooltip="Learn Deployment Tools">Deployment (Netlify, Vercel)</div>
+        <div class="roadmap">
+            <!--HTML & CSS-->
+            <h1 id="Books">Study Material for each Resources:</h1>
+            <div class="step" onclick="toggleContent(this)">
+                <h2>HTML & CSS</h2>
+                <div class="content">
+                    <p>HTML (HyperText Markup Language) structures web pages, while CSS(Cascading Style Sheets) styles them.</p>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/web/HTML" target="_blank">HTML Guide (MDN)</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/web/CSS" target="_blank">CSS Guide (MDN)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+       <!--JavaScript-->
+       <div class="step" onclick="toggleContent(this)">
+        <h2>JavaScript</h2>
+        <div class="content">
+            <p>JavaScript adds interactivity to websites. It's used for form validation, animation, and dynamic content.</p>
+            <ul>
+                <li><a href="https://javascript.info/" target="_blank">JavaScript.info</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/" target="_blank">MDN JavaScript Docs</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--Frontend Framworks-->
+    <div class="step" onclick="toggleContent(this)">
+    <h2>Frontend Frameworks</h2>
+    <div class="content">
+        <p>Frameworks like React, Vue, and Angular simplify building large-scale frontend applications.</p>
+        <ul>
+            <li><a href="https://reactjs.org/" target="_blank">React</a></li>
+            <li><a href="https://vuejs.org/" target="_blank">Vue.js</a></li>
+            <li><a href="https://angular.io/" target="_blank">Angular</a></li>
+        </ul>
+    </div>
+    </div>
+    <!--Backend Development-->
+    <div class="step" onclick="toggleContent(this)">
+        <h2>Backend (Node.js, PHP)</h2>
+        <div class="contnt">
+            <p>Backend development focuses on server-side logic and database handling using technologies like Node.js and PHP.</p>
+            <ul>
+                <li><a href="https://nodejs.org/en/" target="_blank">Node.js</a></li>
+                <li><a href="https://www.php.net/" target="_blank">PHP</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--Databases-->
+    <div class="step" onclick="toggleContent(this)">
+        <h2>Databases(SQL & NoSQL)</h2>
+        <div class="content">
+            <p>Databases store application data. SQL databases(e.g.,MySQL) and NoSQL databases(e.g.,MongoDB) are popular choices</p>
+            <ul>
+                <li><a href="https://www.mysql.com/" target="_blank">MySQL></a></li>
+                <li><a href="https://www.mongodb.com/" target="_blank">MongoDB></a></li>
+            </ul>
+        </div>
+    </div>
+    <!--Git & Github-->
+    <div class="step" onclick="toggleContent(this)">
+        <h2>Git & GitHub</h2>
+        <div class="content">
+            <p>Git is a version control system, and GitHub is a platform for hosting and collaborating on projects.</p>
+            <ul>
+                <li><a href="https://git-scm.com/" target="_blank">Git Documentation></a></li>
+                <li><a href="https://github.com/" target="_blank">GitHub></a></li>
+            </ul>
+        </div>
+    </div>
+    <!--Deployment-->
+    <div class="step" onclick="toggleContent(this)">
+        <h2>Deployment</h2>
+        <div class="content">
+            <p>Deployment services like Netlify and Vercel make it easy to host and deploy web applications.</p>
+            <ul>
+                <li><a href="https://www.netlify.com/" target="_blank">Netlify></a></li>
+                <li><a href="https://vercel.com/" target="_blank">Vercel></a></li>
+            </ul>
+        </div>
+    </div>
+    <!--Additional Features-->
+    <div class="step" onclick="toggleContent(this)">
+        <h2>Additional Features</h2>
+        <div class="content">
+            <p>Explore more advanced topics like Responsive Design, Progressive Web Apps, and API's</p>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Responsive_design" target="_blank">Responsive Design></a></li>
+                <li><a href="https://web.dev/progressive-web-apps/" target="_blank">Progressive Web Apps></a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/API" target="_blank">Web APIs></a></li>
+            </ul>
+        </div>
+    </div>
+    </div> 
+   </main>
+
+   <div id="container">
+    <h1 id="Books">Recommended Books and Guide:</h1>
+        <div class="step" onclick="toggleContent(this)">
+            <h2>HTML & CSS</h2>
+            <div class="content">
+                <!-- <p>HTML(HyperText Markup Language) structures content, while CSS(Cascading Style Sheets) Styles it.</p> -->
+                <!-- <iframe width="300" height="180"
+                src="https://www.youtube.com/embed/qz0aGYrrlhU" title="HTML & CSS Crash Course"></iframe> -->
+                <p><strong>Recommended Books:</strong></p>
+                <ul>
+                    <li><a href="https://www.htmlandcssbook.com/" target="_blank">HTML & CSS:Design and Build Websites</a> by Jon Duckett</li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN HTML Documentation</a></li>
+                </ul>
+            </div>
+        </div>
+    
+
+   
+        <div class="step" onclick="toggleContent(this)">
+            <h2>JavaScript</h2>
+            <div class="content">
+                <p><strong>Recommended Books:</strong></p>
+                <ul>
+                    <li><a href="https://eloquentjavascript.net/" target="_blank">Eloquent JavaScript </a> by Marijn Haverbeke</li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN JavaScript Documentation</a></li>
+                </ul>
+            </div>
+        </div>
+    
+
+    
+        <div class="step" onclick="toggleContent(this)">
+            <h2>Frontend Frameworks</h2>
+            <div class="content">
+                <p><strong>Recommended Books:</strong></p>
+                <ul>
+                    <li><a href="https://reactjs.org/" target="_blank">Official React Documentation </a></li>
+                    <li><a href="https://Vuejs.org/" target="_blank">Vue.js Guide</a></li>
+                </ul>
+            </div>
+        </div>
+   
+    
+        <div class="step" onclick="toggleContent(this)">
+            <h2>Backend Development</h2>
+            <div class="content">
+                <p><strong>Recommended Books:</strong></p>
+                <ul>
+                    <li><a href="https://nodejs.org/en/" target="_blank">Node.js Documentation</a></li>
+                    <li><a href="https://flask.palletprojects.com/" target="_blank">Flask Documentation(python)</a></li>
+                </ul>
+            </div>
+        </div>
+   
+        <div class="step" onclick="toggleContent(this)">
+            <h2>Databases(SQL & NoSQL)</h2>
+            <div class="content">
+                <p><strong>Recommended Books:</strong></p>
+                <ul>
+                    <li><a href="https://www.mysql.com/" target="_blank">MySQL Documentation</a></li>
+                    <li><a href="https://www.mongodb.com/docs/" target="_blank">MongoDB Guide</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="step" onclick="toggleContent(this)">
+            <h2>Git & GitHub</h2>
+            <div class="content">
+                <p><strong>Recommended Books:</strong></p>
+                <ul>
+                    <li><a href="https://git-scm.com/doc" target="_blank">Pro Git by Scott Chacon</a></li>
+                    <li><a href="https://github.com/" target="_blank">GitHub Documentation</a></li>
+                </ul>
+            </div>
+        </div>  
+
+
+            <h1 id="Books">To Learn Web development step-by-step with detailed topics:</h1>
+            <div class="step" onclick="toggleContent(this)">
+        <h2>HTML & CSS</h2>
+        <p>HTML defines the structure of web pages, while CSS styles the appearance of those pages.</p>
+        <h3>Common HTML Tags</h3>
+        <ul>
+            <li><code>&lt;h1&gt;-&lt;h6&gt;</code>:Headings of different sizes.</li>
+            <li><code>&lt;p&gt;</code>:Paragraphs of text.</li>
+            <li><code>&lt;a href="URL"&gt;</code>:Hyperlinks to other pages.</li>
+            <li><code>&lt;img src="image.jpg"&gt;</code>:Embeds an image.</li>
+            <li><code>&lt;div&gt;</code>:A container for other HTML elements.</li>
+        </ul>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">MDN:Complete HTML Tag List.</a></p>
+        </div>
+        
+        <div class="step" onclick="toggleContent(this)">
+            <h2>JavaScript</h2>
+              <p>JavaScript adds interactivity and dynamic behavior to web pages, manipulating the DOM and handling events.</p>
+        
+              <h3>Useful JavaScript Concepts:</h3>
+              <ul>
+                <li><strong>Variables:</strong> <code>let</code>, <code>const</code>, <code>var</code></li>
+                <li><strong>Functions:</strong> <code>function myFunction() {}</code></li>
+                <li><strong>DOM Manipulation:</strong> <code>document.getElementById()</code></li>
+                <li><strong>Events:</strong> <code>addEventListener()</code></li>
+              </ul>
+              <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">MDN JavaScript Guide</a></p>
+        </div>
+        <div class="step" onclick="toggleContent(this)">
+            <h2>Frontend Frameworks</h2>
+              <p>Frontend frameworks provide reusable components and simplify the building of large-scale applications.</p>
+        
+              <h3>Popular Frontend Frameworks:</h3>
+              <ul>
+                <li><a href="https://reactjs.org/" target="_blank">React</a> - A component-based library.</li>
+                <li><a href="https://vuejs.org/" target="_blank">Vue.js</a> - A lightweight framework.</li>
+                <li><a href="https://angularjs.io/" target="_blank">Angular</a> - A robust framework maintained by Google.</li>
+                </ul>
+        </div>
+
+        <div class="step" onclick="toggleContent(this)">
+            <h2>Backend Development</h2>
+            <div class="content">
+                <p>The backend is responsible for handling business logic, databases, and server-side operations.</p>
+                <h3>Popular Backend Technologies.</h3>
+                <ul>
+                    <li><a href="https://nodejs.org/" target="_blank">Node.js</a> - Javascript runtime for server-side programming.</li>
+                    <li><a href="https://flask.palletsprojects.com/" target="_blank">Flask</a> - A lightweight python framework.</li>
+                    <li><a href="https://www.php.net/" target="_blank">PHP</a> - A widely-used server-side scripting language.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="step" onclick="toggleContent(this)">
+            <h2>Databases</h2>
+            <div class="content">
+                <p>Databases are used to store and retrive data for web applications.</p>
+                <h3>Types of Databases:</h3>
+                <ul>
+                    <li><a href="https://www.mysql.com/" target="_blank">MySQL</a> - A relational database(SQL).</li>
+                    <li><a href="https://www.mongodb.com/" target="_blank">MongoDB</a> - A NoSQL database for unstructured data.</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
